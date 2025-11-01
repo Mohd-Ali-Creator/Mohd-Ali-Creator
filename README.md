@@ -3,15 +3,21 @@
 <h1 align="center">🌸 Welcome to Mohd-Ali-Creator’s Digital Garden 🌸</h1>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" width="300" alt="coding" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/GitHub-%F0%9F%94%97%20Mohd-Ali-Creator-black?style=for-the-badge&logo=github" alt="GitHub" /></a>
-  <a href="mailto:2002mohdali@gmail.com"><img src="https://img.shields.io/badge/Email-%F0%9F%93%A7%20Contact-orange?style=for-the-badge&logo=gmail" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/mohd-ali-khan-0b8a0b282/"><img src="https://img.shields.io/badge/LinkedIn-%F0%9F%8C%9F%20Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
-  <a href="https://codolio.com/profile/it'smohdali"><img src="https://img.shields.io/badge/Codolio-🌱%20It'sMohdAli-green?style=for-the-badge&logo=codolio" alt="Codolio" /></a>
-  <a href="https://twitter.com/Mohamma21850997"><img src="https://img.shields.io/badge/Twitter-%F0%9F%8E%89%20@Mohamma21850997-blue?style=for-the-badge&logo=twitter" alt="Twitter" /></a>
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="mailto:2002mohdali@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/mohd-ali-khan-0b8a0b282/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://codolio.com/profile/it'smohdali">
+    <img src="https://img.shields.io/badge/Codolio-6CC644?style=for-the-badge&logo=leaflet&logoColor=white"/>
+  </a>
+  <a href="https://twitter.com/Mohamma21850997">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+  </a>
 </p>
 
 ---
@@ -23,15 +29,17 @@ Turning ideas into impact, and code into experiences.
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aD4pQXkDnyTprvq/giphy.gif" width="250" alt="typing" />
+  <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="400" alt="sparkle" />
 </p>
 
 ---
 
 ## ⚙️ Skills & Tech Stack  
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,python,html,css,mongodb,git,docker,aws&theme=light" alt="skills icons"/>
-</p>
+Java With DSA
+MongoDB,Express.js,Node.js,React 
+HTML,CSS,JavaScript
+Bootstrap
+Tailwind
 
 ---
 
