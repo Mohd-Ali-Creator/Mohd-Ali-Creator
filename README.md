@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mohd-ali"><img src="https://img.shields.io/badge/GitHub-%F0%9F%94%97%20mohd--ali-black?style=for-the-badge&logo=github"/></a>
-  <a href="mailto:mohdali@example.com"><img src="https://img.shields.io/badge/Email-%F0%9F%93%A7%20Contact-orange?style=for-the-badge&logo=gmail"/></a>
-  <a href="https://linkedin.com/in/mohd-ali"><img src="https://img.shields.io/badge/LinkedIn-%F0%9F%8C%9F%20Connect-blue?style=for-the-badge&logo=linkedin"/></a>
+  <a href="https://github.com/Mohd-Ali-Creator/"><img src="https://img.shields.io/badge/GitHub-%F0%9F%94%97%20mohd--ali-black?style=for-the-badge&logo=github"/></a>
+  <a href="mailto:2002mohdali@gmail.com"><img src="https://img.shields.io/badge/Email-%F0%9F%93%A7%20Contact-orange?style=for-the-badge&logo=gmail"/></a>
+  <a href="https://linkedin.com/in/Mohd Ali Khan"><img src="https://img.shields.io/badge/LinkedIn-%F0%9F%8C%9F%20Connect-blue?style=for-the-badge&logo=linkedin"/></a>
 </p>
 
 ---
