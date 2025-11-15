@@ -46,6 +46,9 @@ Tailwind
 ## 🌈 Featured Projects  
 <p align="center">
   <a href="https://github.com/Mohd-Ali-Creator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Mohd-Ali-Creator&repo=&theme=tokyonight" alt="Pinned Projects" /></a>
+  <h1>Weather App</h1>
+  <h1>Algae AI Opt</h1>
+  <h1>Portfolio</h1>
 </p>
 
 ---
