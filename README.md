@@ -1,8 +1,7 @@
 <!-- GitHub Profile README — Mohd Ali Khan -->
-
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00C9A7&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohd+Ali+Khan;Full+Stack+Developer;KIET+%7C+CSIT+3rd+Year;National+Taekwondo+Player+%F0%9F%A5%8B;Always+Learning+%F0%9F%9A%80" alt="Typing SVG" />
-</h1>
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/Mohd-Ali-Creator" width="150" />
+</p>
 
 <p align="center">
   <a href="https://linkedin.com/in/mohd-ali-khan-0b8a0b282"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
