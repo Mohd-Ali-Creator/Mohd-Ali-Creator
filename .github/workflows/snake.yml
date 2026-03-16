@@ -30,13 +30,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-### Step 4 — Commit karo
-```
-"Commit changes" → "Commit directly to main" → Confirm
-```
-
-### Step 5 — Run karo
-```
-Actions tab → "Generate Snake Animation" → "Run workflow" → "Run workflow"
