@@ -1,94 +1,107 @@
-<!-- 🌹✨ Ultimate Aesthetic GitHub Profile README for Mohd-Ali-Creator ✨🌹 -->
+<!-- GitHub Profile README — Mohd Ali Khan -->
 
-<h1 align="center">🌸 Welcome to Mohd-Ali-Creator’s Digital Garden 🌸</h1>
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00C9A7&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohd+Ali+Khan;Full+Stack+Developer;KIET+%7C+CSIT+3rd+Year;National+Taekwondo+Player+%F0%9F%A5%8B;Always+Learning+%F0%9F%9A%80" alt="Typing SVG" />
+</h1>
 
 <p align="center">
-  <a href="https://github.com/Mohd-Ali-Creator">
-    <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="mailto:2002mohdali@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/mohd-ali-khan-0b8a0b282/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://codolio.com/profile/it'smohdali">
-    <img src="https://img.shields.io/badge/Codolio-6CC644?style=for-the-badge&logo=leaflet&logoColor=white"/>
-  </a>
-  <a href="https://twitter.com/Mohamma21850997">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
-  </a>
+  <a href="https://linkedin.com/in/mohd-ali-khan-0b8a0b282"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://leetcode.com/MohdAliKhan"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Mohd-Ali-Creator&style=for-the-badge&color=blueviolet" />
 </p>
 
 ---
 
-## 💫 About Me  
+## 🙋‍♂️ About Me
+
+- 🎓 **B.Tech CSIT** @ KIET Group of Institutions (3rd Year)
+- 💻 Passionate **Full Stack Developer** (Frontend + Backend)
+- 🥋 **National Taekwondo Player** — discipline on the mat, discipline in code
+- 🌱 Currently exploring **DSA**, **System Design** & **Open Source**
+- 🎯 Goal: Land a **MAANG Internship / SDE Role**
+- ⚡ Fun fact: I believe the best code is like a great kick — fast, clean, and precise
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### Backend & Database
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Tools
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+### 🌦️ Weather App
+> Real-time weather application built with **React.js** using OpenWeather API.
+> Search any city — get live temperature, humidity, wind speed & 5-day forecast.
+
+```
+Tech: React.js | REST API | CSS3
+```
+[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github)](https://github.com/Mohd-Ali-Creator/weather-app)
+
+---
+
+### 📈 Zerodha Clone
+> Full-stack clone of India's #1 trading platform.
+> Features live-like market dashboard, portfolio tracker & responsive fintech UI.
+
+```
+Tech: React.js | Node.js | MongoDB | Express.js
+```
+[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github)](https://github.com/Mohd-Ali-Creator/zerodha-clone)
+
+---
+
+## 📊 GitHub Stats
+
 <p align="center">
-Creative Developer | **FullStack** | **Problem Solver**<br>
-Turning ideas into impact, and code into experiences.
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Mohd-Ali-Creator&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohd-Ali-Creator&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="400" alt="sparkle" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mohd-Ali-Creator&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mohd-Ali-Creator&theme=tokyo-night&hide_border=true" />
 </p>
 
 ---
 
-## ⚙️ Skills & Tech Stack  
-Java With DSA
-MongoDB,Express.js,Node.js,React 
-HTML,CSS,JavaScript
-Bootstrap
-Tailwind
+## 🏆 GitHub Trophies
 
----
-
-## 🌈 Featured Projects  
 <p align="center">
-  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Mohd-Ali-Creator&repo=&theme=tokyonight" alt="Pinned Projects" /></a>
-  <h1>Weather App</h1>
-  <h1>Algae AI Opt</h1>
-  <h1>Portfolio</h1>
+  <img src="https://github-profile-trophy.vercel.app/?username=Mohd-Ali-Creator&theme=tokyonight&no-frame=true&row=1&column=6" />
 </p>
 
 ---
 
-## 📊 GitHub Stats 🌟  
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mohd-Ali-Creator&show_icons=true&theme=radical&count_private=true&hide_border=true" alt="GitHub Stats" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mohd-Ali-Creator&theme=radical&hide_border=true" alt="Streak Stats" width="48%"/>
-</p>
+## 🧩 LeetCode Stats
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mohd-Ali-Creator&theme=dracula&margin-w=15&margin-h=15&row=1&column=6" alt="Trophies"/>
+  <img src="https://leetcard.jacoblin.cool/MohdAliKhan?theme=dark&font=Fira%20Code&ext=heatmap" />
 </p>
 
 ---
 
-## 🎉 Fun Zone  
-### 🎧 What I’m currently listening to  
-[![Spotify](https://img.shields.io/badge/Spotify-🎵%20Listen-green?style=for-the-badge&logo=spotify)](https://open.spotify.com/user/31mypjonyisiamahpxwws2paidpm)  
-*(Link ko apne Spotify profile se replace kar lena jab ready ho).*  
-
-### 🌿 Random fact  
-> “When not coding, I’m exploring sunrise walks, sketching ideas, and dreaming in code.”
-
 <p align="center">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="300" alt="flowers" />
-</p>
-
----
-
-## 🌍 Let’s Connect  
-<p align="center">
-  <a href="https://twitter.com/Mohamma21850997"><img src="https://img.shields.io/badge/Twitter-%F0%9F%8E%89%20Follow-blue?style=for-the-badge&logo=twitter" alt="Twitter" /></a>
-  <a href="https://portfolio.mohdali.dev"><img src="https://img.shields.io/badge/Portfolio-%F0%9F%8C%8D%20Visit-success?style=for-the-badge&logo=firefox" alt="Portfolio" /></a>
-  <a href="mailto:2002mohdali@gmail.com"><img src="https://img.shields.io/badge/Email-%F0%9F%93%A7%20Say%20Hi!-orange?style=for-the-badge&logo=gmail" alt="Email" /></a>
-</p>
-
----
-
-### ✨ Crafted with love and a sprinkle of AI magic ✨  
-<p align="center">
-  <img src="https://media.giphy.com/media/3o6ZsY2gJqE3K4jSE8/giphy.gif" width="400" alt="sparkle" />
+  <i>⚡ "Code. Commit. Conquer."</i><br/>
+  <b>— Mohd Ali Khan</b>
 </p>
