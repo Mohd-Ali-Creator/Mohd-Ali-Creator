@@ -86,7 +86,7 @@ const mohdAliKhan = {
 
 | Project | Description | Tech Stack | Repo |
 |--------|-------------|------------|------|
-| 📈 **Zerodha Clone** | Full-stack clone of India's #1 trading platform — market dashboard, portfolio tracker, order management | React · Node · MongoDB · Express | [View →](https://github.com/Mohd-Ali-Creator/zerodha-clone) |
+| 📈 **Zerodha Clone** | Full-stack clone of India's #1 trading platform — market dashboard, portfolio tracker, order management | React · Node · MongoDB · Express | [View →](https://github.com/Mohd-Ali-Creator/Zerodha-Clone) |
 | 🌦️ **Weather App** | Real-time weather app — live temp, humidity, wind & 5-day forecast for any city | React · OpenWeather API · CSS3 | [View →](https://github.com/Mohd-Ali-Creator/weather-app) |
 
 </div>
