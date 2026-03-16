@@ -1,35 +1,24 @@
 name: Generate 3D Contribution Graph
-
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 18 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Generate 3D Contribution Graph
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Generate Graph
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: Mohd-Ali-Creator
-          SETTING_JSON: '{"type":"tokyo-night"}'
-
-      - name: Push to repo
-        run: |
+      - run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add -A
-          git diff --staged --quiet || git commit -m "update 3d contribution graph"
+          git diff --staged --quiet || git commit -m "update 3d graph"
           git push
