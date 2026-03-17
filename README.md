@@ -106,17 +106,8 @@ const mohdAliKhan = {
 
 <br/>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohd-Ali-Creator&theme=tokyo-night&hide_border=true&area=true&color=00C9A7&line=5865F2&point=ffffff"/>
-
 </div>
 
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mohd-Ali-Creator&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7"/>
-</div>
 
 ---
 
