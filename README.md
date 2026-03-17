@@ -135,7 +135,7 @@ const mohdAliKhan = {
 ## 🌐 3D Contribution Graph
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Mohd-Ali-Creator/Mohd-Ali-Creator/main/profile-3d-contrib/profile-green-animate.svg"
+  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohd-Ali-Creator&theme=tokyo-night&hide_border=true&area=true&color=00C9A7&line=5865F2&point=ffffff"/>
 </div>
 
 ---
