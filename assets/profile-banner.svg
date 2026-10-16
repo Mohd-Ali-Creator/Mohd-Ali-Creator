@@ -1,117 +1,191 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg-base" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080B12"/>
-      <stop offset="55%" stop-color="#101522"/>
-      <stop offset="100%" stop-color="#080B12"/>
+    <!-- Futuristic Color Gradients -->
+    <linearGradient id="bg-void" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070B"/>
+      <stop offset="50%" stop-color="#0B101E"/>
+      <stop offset="100%" stop-color="#05070B"/>
     </linearGradient>
 
-    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#00E5FF" stop-opacity="0.9"/>
+    <linearGradient id="neon-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.1"/>
+      <stop offset="30%" stop-color="#00E5FF" stop-opacity="0.9"/>
       <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#00FF9C" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#00FF9C" stop-opacity="0.1"/>
     </linearGradient>
 
-    <linearGradient id="panel-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#101522" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#080B12" stop-opacity="0.95"/>
+    <linearGradient id="scan-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.35"/>
     </linearGradient>
 
-    <pattern id="eng-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#94A3B8" stroke-width="0.6" stroke-opacity="0.08"/>
-      <circle cx="40" cy="40" r="1" fill="#00E5FF" fill-opacity="0.18"/>
+    <pattern id="cyber-grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#00E5FF" stroke-width="0.5" stroke-opacity="0.07"/>
+      <circle cx="36" cy="36" r="1" fill="#8B5CF6" fill-opacity="0.25"/>
     </pattern>
 
-    <filter id="cyan-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
+
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .hud-title { font: 800 50px 'Orbitron', 'Inter', 'Segoe UI', sans-serif; fill: #E6EDF3; letter-spacing: 3px; }
+      .hud-sub { font: 600 15px 'Fira Code', 'JetBrains Mono', monospace; fill: #00E5FF; letter-spacing: 2px; }
+      .hud-mono { font: 500 12px 'Fira Code', 'JetBrains Mono', monospace; fill: #94A3B8; }
+      .hud-green { font: 700 12px 'Fira Code', 'JetBrains Mono', monospace; fill: #00FF9C; letter-spacing: 1.5px; }
+      .hud-violet { font: 600 12px 'Fira Code', 'JetBrains Mono', monospace; fill: #A78BFA; }
+
+      /* Radar & Core Animations */
+      @keyframes spinCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinCCW {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 1; }
+      }
+      @keyframes blinkCursor {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes dataFlow {
+        to { stroke-dashoffset: -240; }
+      }
+      @keyframes scanSweep {
+        0% { transform: translateY(-380px); }
+        100% { transform: translateY(380px); }
+      }
+      @keyframes eqBar1 { 0%, 100% { height: 10px; y: 30px; } 50% { height: 32px; y: 8px; } }
+      @keyframes eqBar2 { 0%, 100% { height: 28px; y: 12px; } 50% { height: 8px; y: 32px; } }
+      @keyframes eqBar3 { 0%, 100% { height: 16px; y: 24px; } 50% { height: 36px; y: 4px; } }
+
+      .ring-cw { transform-origin: 990px 185px; animation: spinCW 18s linear infinite; }
+      .ring-ccw { transform-origin: 990px 185px; animation: spinCCW 12s linear infinite; }
+      .ring-fast { transform-origin: 990px 185px; animation: spinCW 6s linear infinite; }
+      .pulse-node { animation: pulseGlow 2.4s ease-in-out infinite; }
+      .cursor-blink { animation: blinkCursor 1s step-end infinite; }
+      .circuit-stream { stroke-dasharray: 12 228; animation: dataFlow 3.5s linear infinite; }
+      .circuit-stream-2 { stroke-dasharray: 18 222; animation: dataFlow 4.5s linear infinite; }
+      .scanner { animation: scanSweep 6s linear infinite; }
+      .bar1 { animation: eqBar1 1.2s ease-in-out infinite; }
+      .bar2 { animation: eqBar2 0.9s ease-in-out infinite; }
+      .bar3 { animation: eqBar3 1.5s ease-in-out infinite; }
+    </style>
   </defs>
 
-  <!-- Base Canvas -->
-  <rect width="1200" height="320" rx="12" fill="url(#bg-base)" stroke="#1E293B" stroke-width="1.5"/>
-  <rect width="1200" height="320" rx="12" fill="url(#eng-grid)"/>
+  <!-- Main Chassis Background -->
+  <rect width="1200" height="380" rx="16" fill="url(#bg-void)" stroke="#1E293B" stroke-width="2"/>
+  <rect width="1200" height="380" rx="16" fill="url(#cyber-grid)"/>
 
-  <!-- Ambient Nodes -->
-  <circle cx="980" cy="70" r="140" fill="#8B5CF6" fill-opacity="0.06" filter="url(#cyan-glow)"/>
-  <circle cx="180" cy="250" r="160" fill="#00E5FF" fill-opacity="0.05" filter="url(#cyan-glow)"/>
+  <!-- Animated Laser Scan Sweep -->
+  <g class="scanner" opacity="0.6">
+    <rect x="0" y="0" width="1200" height="60" fill="url(#scan-grad)"/>
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#00E5FF" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
 
-  <!-- Top System Telemetry Bar -->
-  <g transform="translate(50, 36)">
-    <rect x="0" y="0" width="10" height="10" rx="2" fill="#00FF9C"/>
-    <text x="20" y="9" fill="#00FF9C" font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="12" font-weight="600" letter-spacing="2.5">
-      ALI // DIGITAL ENGINEERING LAB
-    </text>
-    <text x="310" y="9" fill="#94A3B8" font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.5">
-      [SYS.NODE: IN-GZB-2026]
+  <!-- Glowing Circuit Traces (Background + Animated Packets) -->
+  <path d="M 0 310 L 380 310 L 420 340 L 820 340" fill="none" stroke="#1E293B" stroke-width="2"/>
+  <path d="M 0 310 L 380 310 L 420 340 L 820 340" fill="none" stroke="#00E5FF" stroke-width="2.5" class="circuit-stream" filter="url(#glow-cyan)"/>
+
+  <path d="M 1200 65 L 850 65 L 820 35 L 520 35" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+  <path d="M 1200 65 L 850 65 L 820 35 L 520 35" fill="none" stroke="#8B5CF6" stroke-width="2" class="circuit-stream-2"/>
+
+  <!-- Outer HUD Frame Brackets -->
+  <path d="M 24 70 L 24 24 L 80 24" fill="none" stroke="#00E5FF" stroke-width="3" filter="url(#glow-cyan)"/>
+  <path d="M 24 310 L 24 356 L 80 356" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <path d="M 1176 70 L 1176 24 L 1120 24" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+  <path d="M 1176 310 L 1176 356 L 1120 356" fill="none" stroke="#00FF9C" stroke-width="3" filter="url(#glow-green)"/>
+
+  <!-- Top Telemetry Header -->
+  <g transform="translate(55, 48)">
+    <circle cx="6" cy="-4" r="5" fill="#00FF9C" class="pulse-node" filter="url(#glow-green)"/>
+    <text x="22" y="0" class="hud-green">SYS.ONLINE // ALI DIGITAL ENGINEERING LAB</text>
+    <text x="395" y="0" class="hud-mono">[KERNEL: v3.4.2-ARCH]   [NODE: IN-GZB-KIET]</text>
+  </g>
+
+  <!-- Primary Identity Block -->
+  <g transform="translate(55, 130)">
+    <text x="0" y="0" class="hud-title" filter="url(#glow-cyan)">MOHD ALI KHAN</text>
+    <text x="2" y="38" class="hud-sub">
+      &gt; FULL-STACK ENGINEER  //  CYBERSECURITY (AEGIS AI)  //  JAVA &amp; CLOUD
+      <tspan class="cursor-blink" fill="#00FF9C">█</tspan>
     </text>
   </g>
 
-  <!-- Corner Brackets -->
-  <path d="M 30 55 L 30 22 L 65 22" fill="none" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.7"/>
-  <path d="M 1170 265 L 1170 298 L 1135 298" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-opacity="0.7"/>
-
-  <!-- Main Developer Identity -->
-  <g transform="translate(50, 118)">
-    <text x="0" y="0" fill="#E6EDF3" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.5">
-      MOHD ALI KHAN
+  <!-- Terminal Command Window (Center-Left) -->
+  <g transform="translate(55, 195)">
+    <rect x="0" y="0" width="710" height="92" rx="8" fill="#080C16" fill-opacity="0.88" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="0" y="0" width="4" height="92" rx="2" fill="#00E5FF"/>
+    <text x="20" y="26" class="hud-mono">
+      <tspan fill="#00FF9C">ali@engineering-lab:~$</tspan> ./deploy-identity --mode=production --verify
     </text>
-    
-    <text x="2" y="42" fill="#00E5FF" font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="17" font-weight="500" letter-spacing="0.8">
-      Full-Stack Software Engineer  //  Java &amp; Cloud Systems  //  Cybersecurity
+    <text x="20" y="50" class="hud-mono">
+      <tspan fill="#00E5FF">[✔ STACK]</tspan> React.js • Node.js • Express • MongoDB • Java (DSA) • AWS Cloud
     </text>
-
-    <text x="2" y="78" fill="#94A3B8" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="400">
-      Building practical software. Exploring intelligent systems. Engineering with purpose.
+    <text x="20" y="74" class="hud-mono">
+      <tspan fill="#8B5CF6">[✔ FOCUS]</tspan> Building resilient architectures, AI-driven security tools &amp; scalable APIs
     </text>
   </g>
 
-  <!-- Bottom Metadata Pills -->
-  <g transform="translate(50, 232)">
-    <rect x="0" y="0" width="330" height="32" rx="6" fill="#101522" stroke="#1E293B" stroke-width="1"/>
-    <text x="14" y="20" fill="#E6EDF3" font-family="'Fira Code', monospace" font-size="12">
-      <tspan fill="#00E5FF">EDU:</tspan> B.Tech CSIT @ KIET Ghaziabad
-    </text>
+  <!-- Bottom Interactive-Style Status Pills -->
+  <g transform="translate(55, 322)">
+    <rect x="0" y="-18" width="245" height="28" rx="5" fill="#0D1424" stroke="#00E5FF" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="12" y="0" class="hud-mono"><tspan fill="#00E5FF">●</tspan> B.Tech CSIT @ KIET (3rd Yr)</text>
 
-    <rect x="345" y="0" width="290" height="32" rx="6" fill="#101522" stroke="#1E293B" stroke-width="1"/>
-    <text x="359" y="20" fill="#E6EDF3" font-family="'Fira Code', monospace" font-size="12">
-      <tspan fill="#8B5CF6">FOCUS:</tspan> Full-Stack • DSA • AI
-    </text>
+    <rect x="260" y="-18" width="235" height="28" rx="5" fill="#0D1424" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="272" y="0" class="hud-mono"><tspan fill="#A78BFA">◆</tspan> National Taekwondo Athlete</text>
 
-    <rect x="650" y="0" width="185" height="32" rx="6" fill="#101522" stroke="#00FF9C" stroke-width="0.8" stroke-opacity="0.5"/>
-    <circle cx="668" cy="16" r="4" fill="#00FF9C"/>
-    <text x="680" y="20" fill="#00FF9C" font-family="'Fira Code', monospace" font-size="12" font-weight="600">
-      OPEN TO COLLAB
-    </text>
+    <rect x="510" y="-18" width="255" height="28" rx="5" fill="#0D1424" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="522" y="0" class="hud-green">⚡ STATUS: OPEN FOR SDE ROLES</text>
   </g>
 
-  <!-- Right Side Diagnostic Module -->
-  <g transform="translate(880, 52)">
-    <rect x="0" y="0" width="270" height="212" rx="8" fill="url(#panel-grad)" stroke="#1E293B" stroke-width="1.2"/>
-    <line x1="0" y1="32" x2="270" y2="32" stroke="#1E293B" stroke-width="1"/>
-    <circle cx="16" cy="16" r="4" fill="#00E5FF"/>
-    <circle cx="30" cy="16" r="4" fill="#8B5CF6"/>
-    <text x="46" y="20" fill="#94A3B8" font-family="'Fira Code', monospace" font-size="11">telemetry.conf</text>
-
-    <g transform="translate(18, 56)" font-family="'Fira Code', monospace" font-size="12">
-      <text x="0" y="0" fill="#94A3B8">ARCHITECTURE</text>
-      <text x="135" y="0" fill="#E6EDF3">MERN / Java</text>
-
-      <text x="0" y="28" fill="#94A3B8">SECURITY LAB</text>
-      <text x="135" y="28" fill="#00E5FF">AEGIS AI</text>
-
-      <text x="0" y="56" fill="#94A3B8">CLOUD ENV</text>
-      <text x="135" y="56" fill="#8B5CF6">AWS Cloud</text>
-
-      <text x="0" y="84" fill="#94A3B8">DISCIPLINE</text>
-      <text x="135" y="84" fill="#E6EDF3">Natl. Taekwondo</text>
-
-      <line x1="0" y1="106" x2="234" y2="106" stroke="#1E293B" stroke-width="1"/>
-      <text x="0" y="128" fill="#00FF9C">STATUS: ACTIVE_BUILD</text>
-    </g>
+  <!-- ================= RIGHT SIDE: ANIMATED CYBER REACTOR & TELEMETRY ================= -->
+  <!-- Outer Dashed Radar Ring -->
+  <g class="ring-cw">
+    <circle cx="990" cy="185" r="115" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="8 14" stroke-opacity="0.45"/>
+    <circle cx="990" cy="70" r="4" fill="#00E5FF" filter="url(#glow-cyan)"/>
+    <circle cx="990" cy="300" r="4" fill="#00E5FF"/>
   </g>
 
-  <!-- Bottom Horizon Accent Line -->
-  <rect x="50" y="296" width="1100" height="2" fill="url(#accent-line)"/>
+  <!-- Middle Segmented Ring -->
+  <g class="ring-ccw">
+    <circle cx="990" cy="185" r="88" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="45 25 15 25" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- Inner High-Speed Core Ring -->
+  <g class="ring-fast">
+    <circle cx="990" cy="185" r="62" fill="none" stroke="#00FF9C" stroke-width="2" stroke-dasharray="30 65" filter="url(#glow-green)"/>
+  </g>
+
+  <!-- Center Reactor Hexagon & Core Text -->
+  <circle cx="990" cy="185" r="46" fill="#080C16" stroke="#1E293B" stroke-width="2"/>
+  <text x="990" y="180" text-anchor="middle" class="hud-sub" font-size="13" fill="#00E5FF">AEGIS</text>
+  <text x="990" y="198" text-anchor="middle" class="hud-green" font-size="10">CORE v3</text>
+
+  <!-- Live Equalizer / Telemetry Bars next to Reactor -->
+  <g transform="translate(815, 165)">
+    <rect x="0" y="10" width="5" height="30" rx="2" fill="#00E5FF" class="bar1"/>
+    <rect x="9" y="10" width="5" height="30" rx="2" fill="#8B5CF6" class="bar2"/>
+    <rect x="18" y="10" width="5" height="30" rx="2" fill="#00FF9C" class="bar3"/>
+  </g>
+
+  <!-- Bottom Horizon Glow Bar -->
+  <rect x="60" y="366" width="1080" height="2" fill="url(#neon-border)"/>
 </svg>
