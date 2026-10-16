@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
   <defs>
-    <!-- Futuristic Color Gradients -->
     <linearGradient id="bg-void" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#05070B"/>
       <stop offset="50%" stop-color="#0B101E"/>
@@ -47,46 +46,6 @@
       .hud-mono { font: 500 12px 'Fira Code', 'JetBrains Mono', monospace; fill: #94A3B8; }
       .hud-green { font: 700 12px 'Fira Code', 'JetBrains Mono', monospace; fill: #00FF9C; letter-spacing: 1.5px; }
       .hud-violet { font: 600 12px 'Fira Code', 'JetBrains Mono', monospace; fill: #A78BFA; }
-
-      /* Radar & Core Animations */
-      @keyframes spinCW {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes spinCCW {
-        from { transform: rotate(360deg); }
-        to { transform: rotate(0deg); }
-      }
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.35; }
-        50% { opacity: 1; }
-      }
-      @keyframes blinkCursor {
-        0%, 49% { opacity: 1; }
-        50%, 100% { opacity: 0; }
-      }
-      @keyframes dataFlow {
-        to { stroke-dashoffset: -240; }
-      }
-      @keyframes scanSweep {
-        0% { transform: translateY(-380px); }
-        100% { transform: translateY(380px); }
-      }
-      @keyframes eqBar1 { 0%, 100% { height: 10px; y: 30px; } 50% { height: 32px; y: 8px; } }
-      @keyframes eqBar2 { 0%, 100% { height: 28px; y: 12px; } 50% { height: 8px; y: 32px; } }
-      @keyframes eqBar3 { 0%, 100% { height: 16px; y: 24px; } 50% { height: 36px; y: 4px; } }
-
-      .ring-cw { transform-origin: 990px 185px; animation: spinCW 18s linear infinite; }
-      .ring-ccw { transform-origin: 990px 185px; animation: spinCCW 12s linear infinite; }
-      .ring-fast { transform-origin: 990px 185px; animation: spinCW 6s linear infinite; }
-      .pulse-node { animation: pulseGlow 2.4s ease-in-out infinite; }
-      .cursor-blink { animation: blinkCursor 1s step-end infinite; }
-      .circuit-stream { stroke-dasharray: 12 228; animation: dataFlow 3.5s linear infinite; }
-      .circuit-stream-2 { stroke-dasharray: 18 222; animation: dataFlow 4.5s linear infinite; }
-      .scanner { animation: scanSweep 6s linear infinite; }
-      .bar1 { animation: eqBar1 1.2s ease-in-out infinite; }
-      .bar2 { animation: eqBar2 0.9s ease-in-out infinite; }
-      .bar3 { animation: eqBar3 1.5s ease-in-out infinite; }
     </style>
   </defs>
 
@@ -95,17 +54,22 @@
   <rect width="1200" height="380" rx="16" fill="url(#cyber-grid)"/>
 
   <!-- Animated Laser Scan Sweep -->
-  <g class="scanner" opacity="0.6">
+  <g opacity="0.6">
     <rect x="0" y="0" width="1200" height="60" fill="url(#scan-grad)"/>
     <line x1="0" y1="60" x2="1200" y2="60" stroke="#00E5FF" stroke-width="1" stroke-opacity="0.5"/>
+    <animateTransform attributeName="transform" type="translate" from="0 -380" to="0 380" dur="6s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Glowing Circuit Traces (Background + Animated Packets) -->
+  <!-- Glowing Circuit Traces (Background + Animated Data Packets) -->
   <path d="M 0 310 L 380 310 L 420 340 L 820 340" fill="none" stroke="#1E293B" stroke-width="2"/>
-  <path d="M 0 310 L 380 310 L 420 340 L 820 340" fill="none" stroke="#00E5FF" stroke-width="2.5" class="circuit-stream" filter="url(#glow-cyan)"/>
+  <path d="M 0 310 L 380 310 L 420 340 L 820 340" fill="none" stroke="#00E5FF" stroke-width="2.5" stroke-dasharray="14 226" filter="url(#glow-cyan)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-240" dur="3.2s" repeatCount="indefinite"/>
+  </path>
 
   <path d="M 1200 65 L 850 65 L 820 35 L 520 35" fill="none" stroke="#1E293B" stroke-width="1.5"/>
-  <path d="M 1200 65 L 850 65 L 820 35 L 520 35" fill="none" stroke="#8B5CF6" stroke-width="2" class="circuit-stream-2"/>
+  <path d="M 1200 65 L 850 65 L 820 35 L 520 35" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="18 222">
+    <animate attributeName="stroke-dashoffset" from="0" to="-240" dur="4.2s" repeatCount="indefinite"/>
+  </path>
 
   <!-- Outer HUD Frame Brackets -->
   <path d="M 24 70 L 24 24 L 80 24" fill="none" stroke="#00E5FF" stroke-width="3" filter="url(#glow-cyan)"/>
@@ -115,7 +79,9 @@
 
   <!-- Top Telemetry Header -->
   <g transform="translate(55, 48)">
-    <circle cx="6" cy="-4" r="5" fill="#00FF9C" class="pulse-node" filter="url(#glow-green)"/>
+    <circle cx="6" cy="-4" r="5" fill="#00FF9C" filter="url(#glow-green)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
     <text x="22" y="0" class="hud-green">SYS.ONLINE // ALI DIGITAL ENGINEERING LAB</text>
     <text x="395" y="0" class="hud-mono">[KERNEL: v3.4.2-ARCH]   [NODE: IN-GZB-KIET]</text>
   </g>
@@ -125,7 +91,7 @@
     <text x="0" y="0" class="hud-title" filter="url(#glow-cyan)">MOHD ALI KHAN</text>
     <text x="2" y="38" class="hud-sub">
       &gt; FULL-STACK ENGINEER  //  CYBERSECURITY (AEGIS AI)  //  JAVA &amp; CLOUD
-      <tspan class="cursor-blink" fill="#00FF9C">█</tspan>
+      <tspan fill="#00FF9C">█<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></tspan>
     </text>
   </g>
 
@@ -156,34 +122,46 @@
     <text x="522" y="0" class="hud-green">⚡ STATUS: OPEN FOR SDE ROLES</text>
   </g>
 
-  <!-- ================= RIGHT SIDE: ANIMATED CYBER REACTOR & TELEMETRY ================= -->
-  <!-- Outer Dashed Radar Ring -->
-  <g class="ring-cw">
+  <!-- ================= RIGHT SIDE: ANIMATED CYBER REACTOR ================= -->
+  <!-- Outer Dashed Radar Ring (Clockwise) -->
+  <g>
     <circle cx="990" cy="185" r="115" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="8 14" stroke-opacity="0.45"/>
     <circle cx="990" cy="70" r="4" fill="#00E5FF" filter="url(#glow-cyan)"/>
     <circle cx="990" cy="300" r="4" fill="#00E5FF"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 990 185" to="360 990 185" dur="18s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Middle Segmented Ring -->
-  <g class="ring-ccw">
+  <!-- Middle Segmented Ring (Counter-Clockwise) -->
+  <g>
     <circle cx="990" cy="185" r="88" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="45 25 15 25" stroke-opacity="0.7"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 990 185" to="0 990 185" dur="12s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Inner High-Speed Core Ring -->
-  <g class="ring-fast">
+  <!-- Inner High-Speed Core Ring (Clockwise Fast) -->
+  <g>
     <circle cx="990" cy="185" r="62" fill="none" stroke="#00FF9C" stroke-width="2" stroke-dasharray="30 65" filter="url(#glow-green)"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 990 185" to="360 990 185" dur="6s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Center Reactor Hexagon & Core Text -->
+  <!-- Center Reactor Core Text -->
   <circle cx="990" cy="185" r="46" fill="#080C16" stroke="#1E293B" stroke-width="2"/>
   <text x="990" y="180" text-anchor="middle" class="hud-sub" font-size="13" fill="#00E5FF">AEGIS</text>
   <text x="990" y="198" text-anchor="middle" class="hud-green" font-size="10">CORE v3</text>
 
   <!-- Live Equalizer / Telemetry Bars next to Reactor -->
   <g transform="translate(815, 165)">
-    <rect x="0" y="10" width="5" height="30" rx="2" fill="#00E5FF" class="bar1"/>
-    <rect x="9" y="10" width="5" height="30" rx="2" fill="#8B5CF6" class="bar2"/>
-    <rect x="18" y="10" width="5" height="30" rx="2" fill="#00FF9C" class="bar3"/>
+    <rect x="0" y="10" width="5" height="30" rx="2" fill="#00E5FF">
+      <animate attributeName="height" values="10;34;10" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="30;6;30" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="9" y="10" width="5" height="30" rx="2" fill="#8B5CF6">
+      <animate attributeName="height" values="30;8;30" dur="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="10;32;10" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="18" y="10" width="5" height="30" rx="2" fill="#00FF9C">
+      <animate attributeName="height" values="16;36;16" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="24;4;24" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
   <!-- Bottom Horizon Glow Bar -->
