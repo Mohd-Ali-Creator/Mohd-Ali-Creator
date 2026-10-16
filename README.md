@@ -1,9 +1,11 @@
-<!-- ===================== MOHD ALI KHAN — ALI // DIGITAL ENGINEERING LAB v3.0 ===================== -->
+<!-- ===================== MOHD ALI KHAN — ALI // DIGITAL ENGINEERING LAB v3.1 ===================== -->
 
 <div align="center">
 
-  <!-- 1. CUSTOM ANIMATED SVG CYBER-HUD BANNER -->
-  <img src="./assets/profile-banner.svg" alt="ALI // DIGITAL ENGINEERING LAB — Animated Command Center" width="100%" />
+  <!-- 1. CUSTOM ANIMATED SVG CYBER-HUD BANNER (Wrapped in link to prevent raw file view) -->
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img src="./assets/profile-banner.svg" alt="ALI // DIGITAL ENGINEERING LAB — Animated Command Center" width="100%" />
+  </a>
 
   <!-- 2. LIVE TYPING TELEMETRY STREAM -->
   <a href="https://github.com/Mohd-Ali-Creator">
@@ -12,7 +14,7 @@
 
   <br/>
 
-  <!-- 3. COMMAND DECK NAVIGATION BADGES -->
+  <!-- 3. COMMAND DECK NAVIGATION BADGES (All wrapped in links with valid parameters) -->
   <a href="https://github.com/Mohd-Ali-Creator">
     <img src="https://img.shields.io/badge/GITHUB_LAB-MOHD--ALI--CREATOR-080B12?style=for-the-badge&logo=github&logoColor=00E5FF&labelColor=101522" alt="GitHub" />
   </a>
@@ -22,11 +24,18 @@
   <a href="https://leetcode.com/MohdAliKhan">
     <img src="https://img.shields.io/badge/LEETCODE-MOHDALIKHAN-080B12?style=for-the-badge&logo=leetcode&logoColor=00FF9C&labelColor=101522" alt="LeetCode" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=Mohd-Ali-Creator&style=for-the-badge&color=00E5FF&labelColor=101522&label=TELEMETRY+HITS" alt="Views" />
+  <a href="https://github.com/Mohd-Ali-Creator?tab=followers">
+    <img src="https://img.shields.io/github/followers/Mohd-Ali-Creator?style=for-the-badge&logo=github&logoColor=00FF9C&labelColor=101522&color=080B12&label=FOLLOWERS" alt="Followers" />
+  </a>
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img src="https://komarev.com/ghpvc/?username=Mohd-Ali-Creator&style=for-the-badge&color=00E5FF&label=TELEMETRY+HITS" alt="Telemetry Hits" />
+  </a>
 
 </div>
 
-<img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+<a href="#-01--command-center-diagnostics">
+  <img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+</a>
 
 ## ⚡ `01 // COMMAND CENTER DIAGNOSTICS`
 
@@ -36,7 +45,6 @@
 
 ### `> SYSTEM_PROFILE.exe`
 
-### `> SYSTEM_PROFILE.exe`
 ```yaml
 OPERATOR: Mohd Ali Khan (@Mohd-Ali-Creator)
 INSTITUTION: KIET Group of Institutions (B.Tech CSIT)
@@ -90,13 +98,16 @@ Competing as a **National Taekwondo Player** taught me that elite performance—
 </tr>
 </table>
 
-<img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+<a href="#️-02--technical-ecosystem--architecture">
+  <img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+</a>
 
 ## 🛰️ `02 // TECHNICAL ECOSYSTEM & ARCHITECTURE`
 
 <div align="center">
-  <!-- Dynamic Animated Skill Dock -->
-  <img src="https://skillicons.dev/icons?i=java,js,react,nodejs,express,mongodb,mysql,html,css,aws,git,github,vscode,postman,vercel&perline=15&theme=dark" alt="Tech Stack Dock" />
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img src="https://skillicons.dev/icons?i=java,js,react,nodejs,express,mongodb,mysql,html,css,aws,git,github,vscode,postman,vercel&perline=15&theme=dark" alt="Tech Stack Dock" />
+  </a>
 </div>
 
 <br/>
@@ -105,30 +116,30 @@ Competing as a **National Taekwondo Player** taught me that elite performance—
 <tr>
 <td align="center" width="25%">
   <b>⚙️ LANGUAGES & CORE</b><br/><br/>
-  <img src="https://img.shields.io/badge/Java_SE-080B12?style=flat-square&logo=openjdk&logoColor=00E5FF"/><br/>
-  <img src="https://img.shields.io/badge/JavaScript_ES6+-080B12?style=flat-square&logo=javascript&logoColor=00E5FF"/><br/>
-  <img src="https://img.shields.io/badge/SQL_/_MySQL-080B12?style=flat-square&logo=mysql&logoColor=00E5FF"/><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/Java_SE-080B12?style=flat-square&logo=openjdk&logoColor=00E5FF" alt="Java"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/JavaScript_ES6+-080B12?style=flat-square&logo=javascript&logoColor=00E5FF" alt="JavaScript"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/SQL_/_MySQL-080B12?style=flat-square&logo=mysql&logoColor=00E5FF" alt="SQL"/></a><br/>
   <code>DSA • OOP • DBMS</code>
 </td>
 <td align="center" width="25%">
   <b>🎨 FRONTEND INTERFACES</b><br/><br/>
-  <img src="https://img.shields.io/badge/React.js-080B12?style=flat-square&logo=react&logoColor=00FF9C"/><br/>
-  <img src="https://img.shields.io/badge/HTML5_Semantic-080B12?style=flat-square&logo=html5&logoColor=00FF9C"/><br/>
-  <img src="https://img.shields.io/badge/CSS3_/_Responsive-080B12?style=flat-square&logo=css3&logoColor=00FF9C"/><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/React.js-080B12?style=flat-square&logo=react&logoColor=00FF9C" alt="React"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/HTML5_Semantic-080B12?style=flat-square&logo=html5&logoColor=00FF9C" alt="HTML5"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/CSS3_/_Responsive-080B12?style=flat-square&logo=css3&logoColor=00FF9C" alt="CSS3"/></a><br/>
   <code>State Mgmt • REST Consumption</code>
 </td>
 <td align="center" width="25%">
   <b>🖧 BACKEND & DATA</b><br/><br/>
-  <img src="https://img.shields.io/badge/Node.js-080B12?style=flat-square&logo=nodedotjs&logoColor=8B5CF6"/><br/>
-  <img src="https://img.shields.io/badge/Express.js-080B12?style=flat-square&logo=express&logoColor=8B5CF6"/><br/>
-  <img src="https://img.shields.io/badge/MongoDB_Atlas-080B12?style=flat-square&logo=mongodb&logoColor=8B5CF6"/><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/Node.js-080B12?style=flat-square&logo=nodedotjs&logoColor=8B5CF6" alt="Node.js"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/Express.js-080B12?style=flat-square&logo=express&logoColor=8B5CF6" alt="Express"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/MongoDB_Atlas-080B12?style=flat-square&logo=mongodb&logoColor=8B5CF6" alt="MongoDB"/></a><br/>
   <code>REST APIs • Auth • Schemas</code>
 </td>
 <td align="center" width="25%">
   <b>☁️ CLOUD & SECURITY LAB</b><br/><br/>
-  <img src="https://img.shields.io/badge/AWS_Cloud-080B12?style=flat-square&logo=amazonwebservices&logoColor=00E5FF"/><br/>
-  <img src="https://img.shields.io/badge/Git_/_GitHub_CI-080B12?style=flat-square&logo=githubactions&logoColor=00FF9C"/><br/>
-  <img src="https://img.shields.io/badge/Postman_API_Test-080B12?style=flat-square&logo=postman&logoColor=8B5CF6"/><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/AWS_Cloud-080B12?style=flat-square&logo=amazonwebservices&logoColor=00E5FF" alt="AWS"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/Git_/_GitHub_CI-080B12?style=flat-square&logo=githubactions&logoColor=00FF9C" alt="GitHub CI"/></a><br/>
+  <a href="https://github.com/Mohd-Ali-Creator"><img src="https://img.shields.io/badge/Postman_API_Test-080B12?style=flat-square&logo=postman&logoColor=8B5CF6" alt="Postman"/></a><br/>
   <code>Cyber Awareness • Cloud Deploy</code>
 </td>
 </tr>
@@ -174,7 +185,9 @@ flowchart LR
 
 </details>
 
-<img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+<a href="#-03--deployed-engineering-modules-projects">
+  <img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+</a>
 
 ## 🚀 `03 // DEPLOYED ENGINEERING MODULES (PROJECTS)`
 
@@ -188,8 +201,10 @@ _Select any project card's interactive drawer (`▼`) to inspect its underlying 
 
 **Cybersecurity Awareness & Threat Education Engine**
 
-![Status](https://img.shields.io/badge/STATUS-FLAGSHIP_LAB-00FF9C?style=flat-square&labelColor=080B12)
-![Domain](https://img.shields.io/badge/DOMAIN-CYBER_AWARENESS-00E5FF?style=flat-square&labelColor=080B12)
+<a href="https://github.com/Mohd-Ali-Creator?tab=repositories&q=AEGIS">
+  <img src="https://img.shields.io/badge/STATUS-FLAGSHIP_LAB-00FF9C?style=flat-square&labelColor=080B12" alt="Status"/>
+  <img src="https://img.shields.io/badge/DOMAIN-CYBER_AWARENESS-00E5FF?style=flat-square&labelColor=080B12" alt="Domain"/>
+</a>
 
 Bridges the human vulnerability gap by educating users on phishing mechanics, social engineering vectors, and safe digital hygiene through interactive AI-assisted workflows.
 
@@ -217,8 +232,10 @@ Bridges the human vulnerability gap by educating users on phishing mechanics, so
 
 **Full-Stack Brokerage & Portfolio Platform**
 
-![Status](https://img.shields.io/badge/STATUS-FULL--STACK_MERN-8B5CF6?style=flat-square&labelColor=080B12)
-![Stack](https://img.shields.io/badge/STACK-REACT_•_NODE_•_MONGO-00E5FF?style=flat-square&labelColor=080B12)
+<a href="https://github.com/Mohd-Ali-Creator/Zerodha-Clone">
+  <img src="https://img.shields.io/badge/STATUS-FULL--STACK_MERN-8B5CF6?style=flat-square&labelColor=080B12" alt="Status"/>
+  <img src="https://img.shields.io/badge/STACK-REACT_•_NODE_•_MONGO-00E5FF?style=flat-square&labelColor=080B12" alt="Stack"/>
+</a>
 
 Full-stack financial trading interface and order management system modeled after India's largest brokerage platform, featuring multi-view dashboards and persistent MongoDB state.
 
@@ -247,8 +264,10 @@ Full-stack financial trading interface and order management system modeled after
 
 **Real-Time Meteorological Forecasting App**
 
-![Status](https://img.shields.io/badge/STATUS-VERIFIED_BUILD-00E5FF?style=flat-square&labelColor=080B12)
-![API](https://img.shields.io/badge/API-OPENWEATHER_REST-00FF9C?style=flat-square&labelColor=080B12)
+<a href="https://github.com/Mohd-Ali-Creator/Weather_Website">
+  <img src="https://img.shields.io/badge/STATUS-VERIFIED_BUILD-00E5FF?style=flat-square&labelColor=080B12" alt="Status"/>
+  <img src="https://img.shields.io/badge/API-OPENWEATHER_REST-00FF9C?style=flat-square&labelColor=080B12" alt="API"/>
+</a>
 
 Live environmental telemetry web app providing real-time temperature, wind velocity, humidity, and 5-day forecast matrices for global cities.
 
@@ -272,8 +291,10 @@ Live environmental telemetry web app providing real-time temperature, wind veloc
 
 **Java Data Structures, Algorithms & Contributions**
 
-![Status](https://img.shields.io/badge/STATUS-ACTIVE_GRIND-00FF9C?style=flat-square&labelColor=080B12)
-![Focus](https://img.shields.io/badge/FOCUS-JAVA_•_LEETCODE-8B5CF6?style=flat-square&labelColor=080B12)
+<a href="https://leetcode.com/MohdAliKhan">
+  <img src="https://img.shields.io/badge/STATUS-ACTIVE_GRIND-00FF9C?style=flat-square&labelColor=080B12" alt="Status"/>
+  <img src="https://img.shields.io/badge/FOCUS-JAVA_•_LEETCODE-8B5CF6?style=flat-square&labelColor=080B12" alt="Focus"/>
+</a>
 
 Continuous implementation of core computer science data structures, algorithmic optimizations in Java, and collaborative open-source pull requests.
 
@@ -294,21 +315,31 @@ Continuous implementation of core computer science data structures, algorithmic 
 </tr>
 </table>
 
-<img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+<a href="#-04--live-system-telemetry--activity-matrix">
+  <img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+</a>
 
 ## 📊 `04 // LIVE SYSTEM TELEMETRY & ACTIVITY MATRIX`
 
 <div align="center">
 
   <!-- Row 1: Custom-Themed Cyber Telemetry Cards -->
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Mohd-Ali-Creator&show_icons=true&bg_color=080B12&title_color=00E5FF&text_color=E6EDF3&icon_color=00FF9C&border_color=1E293B&ring_color=8B5CF6&hide_border=false" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Mohd-Ali-Creator&background=080B12&border=1E293B&stroke=1E293B&ring=00E5FF&fire=00FF9C&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=00E5FF&sideLabels=94A3B8&dates=94A3B8" alt="GitHub Streak" />
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Mohd-Ali-Creator&show_icons=true&bg_color=080B12&title_color=00E5FF&text_color=E6EDF3&icon_color=00FF9C&border_color=1E293B&ring_color=8B5CF6&hide_border=false" alt="GitHub Stats" />
+  </a>
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Mohd-Ali-Creator&background=080B12&border=1E293B&stroke=1E293B&ring=00E5FF&fire=00FF9C&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=00E5FF&sideLabels=94A3B8&dates=94A3B8" alt="GitHub Streak" />
+  </a>
 
 <br/><br/>
 
   <!-- Row 2: Language Distribution + LeetCode Heatmap -->
-  <img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohd-Ali-Creator&layout=compact&bg_color=080B12&title_color=00E5FF&text_color=E6EDF3&border_color=1E293B&langs_count=6" alt="Top Languages" />
-  <img width="56%" src="https://leetcard.jacoblin.cool/MohdAliKhan?theme=dark&font=Fira%20Code&ext=heatmap&border=1" alt="LeetCode Telemetry" />
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohd-Ali-Creator&layout=compact&bg_color=080B12&title_color=00E5FF&text_color=E6EDF3&border_color=1E293B&langs_count=6" alt="Top Languages" />
+  </a>
+  <a href="https://leetcode.com/MohdAliKhan">
+    <img width="56%" src="https://leetcard.jacoblin.cool/MohdAliKhan?theme=dark&font=Fira%20Code&ext=heatmap&border=1" alt="LeetCode Telemetry" />
+  </a>
 
 </div>
 
@@ -319,19 +350,25 @@ Continuous implementation of core computer science data structures, algorithmic 
 <br/>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mohd-Ali-Creator/Mohd-Ali-Creator/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mohd-Ali-Creator/Mohd-Ali-Creator/output/github-contribution-grid-snake.svg" />
-    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Mohd-Ali-Creator/Mohd-Ali-Creator/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mohd-Ali-Creator/Mohd-Ali-Creator/output/github-contribution-grid-snake-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mohd-Ali-Creator/Mohd-Ali-Creator/output/github-contribution-grid-snake.svg" />
+      <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Mohd-Ali-Creator/Mohd-Ali-Creator/output/github-contribution-grid-snake-dark.svg" width="100%" />
+    </picture>
+  </a>
 
 <br/><br/>
 
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohd-Ali-Creator&bg_color=080B12&color=00E5FF&line=8B5CF6&point=00FF9C&area=true&hide_border=false&border_color=1E293B" alt="3D Contribution Activity Graph" />
+  <a href="https://github.com/Mohd-Ali-Creator">
+    <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohd-Ali-Creator&bg_color=080B12&color=00E5FF&line=8B5CF6&point=00FF9C&area=true&hide_border=false&border_color=1E293B" alt="3D Contribution Activity Graph" />
+  </a>
 </div>
 </details>
 
-<img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+<a href="#-05--establish-uplink-connect--collaborate">
+  <img src="./assets/section-divider.svg" width="100%" alt="Divider" />
+</a>
 
 ## 📡 `05 // ESTABLISH UPLINK (CONNECT & COLLABORATE)`
 
@@ -345,6 +382,8 @@ Continuous implementation of core computer science data structures, algorithmic 
 
 <br/>
 
-<img src="./assets/footer-telemetry.svg" width="100%" alt="ALI // DIGITAL ENGINEERING LAB Footer" />
+<a href="https://github.com/Mohd-Ali-Creator">
+  <img src="./assets/footer-telemetry.svg" width="100%" alt="ALI // DIGITAL ENGINEERING LAB Footer" />
+</a>
 
 </div>
